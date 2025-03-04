@@ -59,7 +59,7 @@ class RefDataset(Dataset):
             image = self.transform(image)
 
 
-        return random_ann, image, norm_bbox_tensor, image_path
+        return random_ann, image, norm_bbox_tensor, image_path, bbox
 
 
     def normalize_bbox(self, bbox, w, h):
